@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   movieDB.movies.push(newFilm);
                   sortArr(movieDB.movies);
-                  
                   createMovieList(movieDB.movies, movieList);
               }
               event.target.reset();
           });
     
+          
+
     const deleteAdv = (arr) => {
         arr.forEach(element => {
             element.remove();
